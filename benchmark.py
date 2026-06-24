@@ -440,8 +440,6 @@ def benchmark_mfu_comparison(mesh, batch_size=8, n_devices=4):
     head_dim=64:  not 128-aligned → partial tensor core utilization
     head_dim=128: 128-aligned     → full tensor core utilization
     
-    This is the 31%→58% improvement from the resume bullet,
-    now measured on actual H100 hardware.
     """
     print("\n" + "=" * 60)
     print("MFU COMPARISON: head_dim alignment on H100")
